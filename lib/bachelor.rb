@@ -74,5 +74,10 @@ def get_average_age_for_season(data, season)
       end
     end
   end
-  
+  total = 0
+  for num in ages
+    total += num
+  end
+  average = (total / ages.size).round
+  average
 end
