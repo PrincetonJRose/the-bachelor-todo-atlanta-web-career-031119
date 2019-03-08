@@ -5,7 +5,6 @@ def get_first_name_of_season_winner(data, season)
   data.each do |key, value|
     if key == season
       value.each do |key2|
-        binding.pry
         if key2.has_value?("Winner")
           key2.each do |key3, value2|
             if key3 == "name"
