@@ -20,12 +20,11 @@ end
 def get_contestant_name(data, occupation)
   # code here
   data.each do |key, value|
-      value.each do |key2|
-        if key2.has_value?(occupation)
-          key2.each do |key3, value2|
-            if key3 == "name"
-              return value2
-            end
+    value.each do |key2|
+      if key2.has_value?(occupation)
+        key2.each do |key3, value2|
+          if key3 == "name"
+            return value2
           end
         end
       end
